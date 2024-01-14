@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입 페이지</title>
+  <link rel="stylesheet" href="./css/join.css">
+</head>
+
+<body>
+  <h1>Join</h1>
+  <form action="#">
+    <p>
+      <label for="id"></label>
+      <input id="id" type="text" placeholder="ID">
+      <span id="idNofi" style="color: grey;"></span>
+    </p>
+    <p>
+      <label for="pw"></label>
+      <input id="pw" type="text" placeholder="Password">
+      <span id="pwNofi" style="color: grey;"></span>
+    </p>
+    <p>
+      <label for="confirmPw">Confirm Password:</label>
+      <input id="confirmPw" type="password" placeholder="Password 한번 더 입력" name="confirmPassword"
+        oninput="validateConfirmPassword()">
+      <span id="confirmPwNofi" style="color: grey;"></span>
+    </p>
+    <p>
+      <label for="name">이름:</label>
+      <input id="name" type="text" placeholder="이름 입력" name="name">
+    </p>
+    <p>
+      <label for="tel">전화번호:</label>
+      <input id="tel" type="text" placeholder="숫자만 입력( '-' 생략)" name="tel" oninput="formatPhoneNumber()">
+      <span id="telNofi" style="color: grey;"></span>
+    </p>
+    <p>
+      <label for="email">이메일:</label>
+      <input id="email" type="email" placeholder="이메일 입력" name="email" oninput="validateEmail()">
+      <span id="emailNofi" style="color: grey;"></span>
+    </p>
+    <p>
+      <label for="address">주소:</label>
+      <input id="address" type="text" placeholder="주소 입력" name="address">
+    </p>
+
+    <button type="button" onclick="signup()">Sign Up</button>
+  </form>
+  <nav>Are you join? <a href="./login.html">Login</a></nav>
+
+
+  <script src="./js/join.js"></script>
+</body>
+
+</html>

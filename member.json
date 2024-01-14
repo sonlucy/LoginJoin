@@ -1,0 +1,18 @@
+[
+  {
+    "id": "userid1",
+    "password": "password1Q!",
+    "name": "홍길동",
+    "phone": "010-4568-7918",
+    "email": "hong@naver.com",
+    "address": "강원도 춘천시 남춘로51번길 6-3(효자동) 24372 한국 "
+  },
+  {
+    "id": "userid2",
+    "password": "password2Q@",
+    "name": "이순신",
+    "phone": "010-3332-2222",
+    "email": "leesun@gmail.com",
+    "address": "경기도 이천시 부발읍 황무로1833번길 288-37 17405 한국"
+  }
+]

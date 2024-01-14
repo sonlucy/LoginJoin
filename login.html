@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/login.css">
+  <title>로그인화면</title>
+</head>
+
+<body>
+  <h1>Login</h1>
+  <form action="#">
+    <p>
+      <label for="id"></label>
+      <input id="id" type="text" placeholder="ID" name="id" oninput="validateId()">
+      <span id="idError" style="color: grey;"></span>
+    </p>
+    <p>
+      <label for="pw"></label>
+      <input id="pw" type="text" placeholder="Password" name="pw" oninput="validatePassword()">
+      <span id="pwError" style="color: grey;"></span>
+    </p>
+    <a href="#" id="forgetPw">Forget Password?</a>
+
+    <button id="loginButtn" type="button" onclick="login()">Login</button>
+  </form>
+  <nav>Not a Member?? <a href="./join.html">Sign up</a></nav>
+
+  <script src="./js/login.js"></script>
+</body>
+
+</html>
