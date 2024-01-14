@@ -155,7 +155,7 @@ async function signup() {
 } */
 async function fetchJsonFile() {
   try {
-    const response = await fetch('/homework/member.json');
+    const response = await fetch('/member.json');
     const serverData = await response.json(); ///////////////////////
 
     // 로컬 스토리지에서 이전 데이터 가져오기
@@ -164,7 +164,9 @@ async function fetchJsonFile() {
     // 서버에서 가져온 데이터와 로컬 스토리지에 있는 데이터 병합
     // const mergedData = [...localData, ...serverData];
      // 서버에서 가져온 데이터와 로컬 스토리지에 있는 데이터 중복 제거 후 병합
-    const mergedData = [...localData.filter(user => !serverData.some(s => s.id === user.id)), ...serverData];
+    const mergedData = [
+      ...localData.filter(user => !serverData.some(s => s.id === user.id)), 
+      ...serverData];
 
     return mergedData;
   } catch (error) {
