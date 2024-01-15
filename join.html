@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회원가입 페이지</title>
-  <link rel="stylesheet" href="./css/join.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -13,18 +13,18 @@
   <form action="#">
     <p>
       <label for="id"></label>
-      <input id="id" type="text" placeholder="ID">
+      <input id="id" type="text" placeholder="ID" oninput="validSignupId()">
       <span id="idNofi" style="color: grey;"></span>
     </p>
     <p>
       <label for="pw"></label>
-      <input id="pw" type="text" placeholder="Password">
+      <input id="pw" type="text" placeholder="Password" oninput="validSignupPassword()">
       <span id="pwNofi" style="color: grey;"></span>
     </p>
     <p>
       <label for="confirmPw">Confirm Password:</label>
       <input id="confirmPw" type="password" placeholder="Password 한번 더 입력" name="confirmPassword"
-        oninput="validateConfirmPassword()">
+        oninput="validConfirmPassword()">
       <span id="confirmPwNofi" style="color: grey;"></span>
     </p>
     <p>
@@ -33,12 +33,12 @@
     </p>
     <p>
       <label for="tel">전화번호:</label>
-      <input id="tel" type="text" placeholder="숫자만 입력( '-' 생략)" name="tel" oninput="formatPhoneNumber()">
+      <input id="tel" type="text" placeholder="숫자만 입력( '-' 생략)" name="tel" oninput="validformatTel()">
       <span id="telNofi" style="color: grey;"></span>
     </p>
     <p>
       <label for="email">이메일:</label>
-      <input id="email" type="email" placeholder="이메일 입력" name="email" oninput="validateEmail()">
+      <input id="email" type="email" placeholder="이메일 입력" name="email" oninput="validEmail()">
       <span id="emailNofi" style="color: grey;"></span>
     </p>
     <p>
